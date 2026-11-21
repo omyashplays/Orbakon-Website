@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbakon | Websites, Google Business Profile &amp; Social Media for Local Businesses in Ranchi</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Orbakon is a one-person digital studio in Piska Nagri, Ranchi, Jharkhand helping local shops and businesses get online with websites, Google Business Profile setup, social media branding, posters, and UGC videos.">
+  <meta name="keywords" content="Orbakon, Ranchi digital agency, website designer in Ranchi, Google Business Profile Ranchi, local SEO Ranchi, Piska Nagri, social media setup, shop website Jharkhand">
+  <meta name="author" content="Orbakon">
+  <meta name="theme-color" content="#0F0D0D">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://orbakon.com/">
+  <meta property="og:title" content="Orbakon | Take your local business online in Ranchi">
+  <meta property="og:description" content="Websites, Google Business Profiles, social media and content for shops and local businesses. Simple, fast and affordable.">
+  <meta property="og:site_name" content="Orbakon">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orbakon | Digital Agency in Ranchi for Local Businesses">
+  <meta name="twitter:description" content="Take your shop or local business online. Websites, Google Maps setup, and social media made simple.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo-mark.png">
+  <link rel="apple-touch-icon" href="logo-mark.png">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Global Interactive Constellation Particle Canvas (Across Whole Website) -->
+  <canvas id="global-particles" class="global-particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       NAVIGATION (Sticky Header)
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Official Orbakon Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Orbakon - Home">
+        <img src="logo-horizontal.png" alt="Orbakon" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Nav CTA -->
+      <div class="nav-actions">
+        <!-- WhatsApp Contact Link (Updated with your phone & prefilled message) -->
+        <a href="https://wa.me/917903947219?text=Hi%20Orbakon%2C%20I%20want%20to%20get%20my%20business%20online." 
+           class="btn btn-whatsapp nav-btn" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Chat with Orbakon on WhatsApp">
+          <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>WhatsApp Us</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#how-it-works" class="mobile-nav-link">How it works</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="https://wa.me/917903947219?text=Hi%20Orbakon%2C%20I%20want%20to%20get%20my%20business%20online." 
+           class="btn btn-whatsapp mobile-nav-btn" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =========================================================================
+         HERO SECTION (With Interactive Canvas & Floating Motion Elements)
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Background Ambient Glow & Cyber Orb -->
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="hero-cyber-orb" aria-hidden="true"></div>
+
+      <!-- Floating Glassmorphic Ambient Cards (Parallax on desktop) -->
+      <div class="hero-floating-elements" aria-hidden="true">
+        
+        <!-- Top Left: Google Maps Pin -->
+        <div class="hero-float-card hero-float-top-left" data-speed="1.2">
+          <div class="float-icon-box pin-icon-bg">📍</div>
+          <div class="float-info">
+            <span class="float-title">Google Maps Ranking</span>
+            <span class="float-subtitle">#1 in Ranchi Local Search</span>
+          </div>
+          <span class="float-stars">★ 4.9</span>
+        </div>
+
+        <!-- Bottom Left: Social Media Growth -->
+        <div class="hero-float-card hero-float-bottom-left" data-speed="2.2">
+          <div class="float-icon-box graph-icon-bg">📈</div>
+          <div class="float-info">
+            <span class="float-title">Instagram &amp; Facebook</span>
+            <span class="float-subtitle">+340% Local Reach</span>
+          </div>
+          <span class="float-pill-active">Active</span>
+        </div>
+
+        <!-- Top Right: WhatsApp Order Lead -->
+        <div class="hero-float-card hero-float-top-right" data-speed="1.6">
+          <div class="float-icon-box wa-icon-bg">💬</div>
+          <div class="float-info">
+            <span class="float-title">WhatsApp Lead</span>
+            <span class="float-subtitle">"Hi, I want to order from your shop"</span>
+          </div>
+          <span class="float-pulse-badge"></span>
+        </div>
+
+        <!-- Bottom Right: Fast Website -->
+        <div class="hero-float-card hero-float-bottom-right" data-speed="2.0">
+          <div class="float-icon-box web-icon-bg">⚡</div>
+          <div class="float-info">
+            <span class="float-title">Shop Website</span>
+            <span class="float-subtitle">0.4s Ultra-fast mobile load</span>
+          </div>
+          <span class="float-verified">100%</span>
+        </div>
+
+      </div>
+
+      <div class="container hero-container">
+        
+        <!-- Location badge -->
+        <div class="badge-pill fade-in">
+          <span class="badge-dot"></span>
+          <span>Based in Piska Nagri, Ranchi • Helping Local Shops Get Online</span>
+        </div>
+
+        <!-- Headline with Dynamic Kinetic Word Rotator -->
+        <h1 class="hero-title fade-in">
+          Take your local business <br class="hero-break">
+          <span class="rotator-container">
+            <span class="rotator-track" id="rotator-track">
+              <span class="rotator-item active">online.</span>
+              <span class="rotator-item">to Google Maps.</span>
+              <span class="rotator-item">to Instagram.</span>
+              <span class="rotator-item">to 10x Customers.</span>
+            </span>
+          </span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="hero-subtitle fade-in">
+          Websites, Google Business Profiles, social media and content for shops and local businesses. Everything you need to get found and get customers.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group fade-in">
+          <a href="https://wa.me/917903947219?text=Hi%20Orbakon%2C%20I%20want%20to%20get%20my%20business%20online." 
+             class="btn btn-primary btn-large btn-glow" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
+          </a>
+          <a href="#services" class="btn btn-secondary btn-large">
+            <span>See our services</span>
+            <svg class="icon" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 7.5L10 12.5L15 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust bullet tags -->
+        <div class="hero-trust-bar fade-in">
+          <div class="trust-item">
+            <span class="trust-check">✓</span>
+            <span>No confusing tech talk</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-check">✓</span>
+            <span>No big agency prices</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-check">✓</span>
+            <span>Fast, hassle-free delivery</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SERVICES SECTION (5 Clickable Cards with Pastel Tiles)
+         ========================================================================= -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Services</span>
+          <h2 class="section-title">What we can set up for you</h2>
+          <p class="section-description">
+            Everything your shop or business needs to get discovered by nearby customers. Click any service to view details and example work.
+          </p>
+        </div>
+
+        <!-- 5 Service Cards Grid -->
+        <div class="services-grid" id="services-grid" role="list">
+
+          <!-- 1. Social Media Account Setup (Lavender/Purple Pastel) -->
+          <article class="service-card" data-service-id="social-media" role="listitem" tabindex="0" aria-haspopup="dialog" aria-label="Social Media Account Setup service card">
+            <div class="card-tile tile-lavender">
+              <img src="assets/services/social-media.jpg" alt="Social Media Account Setup 3D preview" class="tile-img" loading="lazy">
+              <span class="tile-chip">Account Setup</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Social Media Account Setup</h3>
+              <p class="card-description">
+                We create and set up your Instagram and Facebook business pages with a proper profile, bio and branding.
+              </p>
+              <div class="card-footer">
+                <span class="price-tag">Contact for price</span>
+                <span class="card-action-link">
+                  <span>View examples</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Google Business Profile Setup & Optimization (Blue Pastel) -->
+          <article class="service-card" data-service-id="google-business" role="listitem" tabindex="0" aria-haspopup="dialog" aria-label="Google Business Profile Setup and Optimization service card">
+            <div class="card-tile tile-blue">
+              <img src="assets/services/google-maps.jpg" alt="Google Business Profile Setup 3D preview" class="tile-img" loading="lazy">
+              <span class="tile-chip">Google Maps</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Google Business Profile Setup &amp; Optimization</h3>
+              <p class="card-description">
+                Show up on Google Maps and local search so nearby customers can find, call and visit you.
+              </p>
+              <div class="card-footer">
+                <span class="price-tag">Contact for price</span>
+                <span class="card-action-link">
+                  <span>View examples</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. UGC Video (Yellow Pastel) -->
+          <article class="service-card" data-service-id="ugc-video" role="listitem" tabindex="0" aria-haspopup="dialog" aria-label="UGC Video service card">
+            <div class="card-tile tile-yellow">
+              <img src="assets/services/ugc-video.jpg" alt="UGC Video 3D preview" class="tile-img" loading="lazy">
+              <span class="tile-chip">Authentic Reels</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">UGC Video</h3>
+              <p class="card-description">
+                Short, authentic videos for your product or shop that look real and get attention on social media.
+              </p>
+              <div class="card-footer">
+                <span class="price-tag">Contact for price</span>
+                <span class="card-action-link">
+                  <span>View examples</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Banner & Poster for Social Media (Pink Pastel) -->
+          <article class="service-card" data-service-id="banner-poster" role="listitem" tabindex="0" aria-haspopup="dialog" aria-label="Banner and Poster for Social Media service card">
+            <div class="card-tile tile-pink">
+              <img src="assets/services/banner-poster.jpg" alt="Banner & Poster Design 3D preview" class="tile-img" loading="lazy">
+              <span class="tile-chip">Graphics &amp; Offers</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Banner &amp; Poster for Social Media</h3>
+              <p class="card-description">
+                Eye-catching posters and banners for your offers, festivals and daily posts.
+              </p>
+              <div class="card-footer">
+                <span class="price-tag">Contact for price</span>
+                <span class="card-action-link">
+                  <span>View examples</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Website for Shop (Mint Pastel) -->
+          <article class="service-card" data-service-id="shop-website" role="listitem" tabindex="0" aria-haspopup="dialog" aria-label="Website for Shop service card">
+            <div class="card-tile tile-mint">
+              <img src="assets/services/shop-website.jpg" alt="Website for Shop 3D preview" class="tile-img" loading="lazy">
+              <span class="tile-chip">Mobile Website</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Website for Shop</h3>
+              <p class="card-description">
+                A simple, fast, mobile-friendly website for your shop with your products, location and contact buttons.
+              </p>
+              <div class="card-footer">
+                <span class="price-tag">Contact for price</span>
+                <span class="card-action-link">
+                  <span>View examples</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         HOW IT WORKS SECTION (Interactive Energy Beam & 3D Step Cards)
+         ========================================================================= -->
+    <section class="section how-it-works-section" id="how-it-works">
+      
+      <!-- Ambient Background Glow Orb -->
+      <div class="how-it-works-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Process</span>
+          <h2 class="section-title">How it works</h2>
+          <p class="section-description">
+            No long meetings, no complicated questionnaires. Just 3 simple steps to get your shop running online.
+          </p>
+        </div>
+
+        <div class="steps-grid-wrapper">
+          
+          <!-- Animated Neon Energy Conduit Line (Connecting Steps 01 -> 02 -> 03) -->
+          <div class="steps-energy-beam" aria-hidden="true">
+            <div class="beam-glow-pulse"></div>
+          </div>
+
+          <div class="steps-grid">
+            
+            <!-- Step 1 -->
+            <div class="step-card" data-step="1" tabindex="0">
+              <div class="step-number-wrapper">
+                <span class="step-number">01</span>
+                <span class="step-mini-chip">Replies in 2m</span>
+              </div>
+              <div class="step-icon-showcase wa-step-theme">
+                <span class="step-icon-aura"></span>
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <div class="typing-bubble">
+                  <span class="type-dot"></span>
+                  <span class="type-dot"></span>
+                  <span class="type-dot"></span>
+                </div>
+              </div>
+              <h3 class="step-title">Message us on WhatsApp</h3>
+              <p class="step-text">
+                Tell us about your business or shop. No form filling, no technical terms—just tell us what you do and what you want to achieve.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-card" data-step="2" tabindex="0">
+              <div class="step-number-wrapper">
+                <span class="step-number">02</span>
+                <span class="step-mini-chip">Tailored Plan</span>
+              </div>
+              <div class="step-icon-showcase plan-step-theme">
+                <span class="step-icon-aura"></span>
+                <svg viewBox="0 0 36 36" width="32" height="32" fill="none" class="radar-scan-svg">
+                  <circle cx="18" cy="18" r="15" stroke="#A855F7" stroke-width="1.8" stroke-dasharray="4 2" class="radar-rotate-ring"/>
+                  <circle cx="18" cy="18" r="8" stroke="#DDD6FE" stroke-width="1.5"/>
+                  <circle cx="18" cy="18" r="3" fill="#A855F7"/>
+                  <line x1="18" y1="3" x2="18" y2="33" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.4"/>
+                  <line x1="3" y1="18" x2="33" y2="18" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.4"/>
+                </svg>
+              </div>
+              <h3 class="step-title">We plan your online setup</h3>
+              <p class="step-text">
+                We recommend exactly what you need—whether it is Google Maps visibility, social media branding, or a fast one-page shop catalog.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-card" data-step="3" tabindex="0">
+              <div class="step-number-wrapper">
+                <span class="step-number">03</span>
+                <span class="step-mini-chip chip-ready">Ready to Launch</span>
+              </div>
+              <div class="step-icon-showcase launch-step-theme">
+                <span class="step-icon-aura"></span>
+                <svg viewBox="0 0 36 36" width="32" height="32" fill="none">
+                  <circle cx="18" cy="18" r="15" fill="rgba(16, 185, 129, 0.15)"/>
+                  <circle cx="18" cy="18" r="14" stroke="#10B981" stroke-width="2"/>
+                  <polyline points="11,18 16,23 25,13" stroke="#10B981" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="step-title">We build it and hand it over</h3>
+              <p class="step-text">
+                We design, test, and publish your setup. We hand over all logins, show you how to manage it, and remain available for support.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         CONTACT SECTION (WhatsApp, Email, Location - Interactive Motion & Glow)
+         ========================================================================= -->
+    <section class="section contact-section" id="contact">
+      
+      <!-- Ambient Background Glow Orb -->
+      <div class="contact-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="badge-pill contact-status-pill fade-in">
+            <span class="live-pulse-dot"></span>
+            <span>Available for new projects this week • Direct 1-on-1 response</span>
+          </div>
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Ready to grow your shop?</h2>
+          <p class="section-description">
+            Message or email us today. We’ll answer your questions and help you decide the best way to get online.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+
+          <!-- WhatsApp Card (Interactive 3D + Neon Green Glow) -->
+          <div class="contact-card primary-contact-card" data-tilt-type="green" tabindex="0">
+            <div class="contact-icon-wrapper whatsapp-bg">
+              <span class="icon-pulse-ring wa-ring"></span>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">WhatsApp</h3>
+            <p class="contact-card-info">+91 79039 47219</p>
+            <p class="contact-card-sub">Fastest reply — usually within minutes</p>
+            <a href="https://wa.me/917903947219?text=Hi%20Orbakon%2C%20I%20want%20to%20get%20my%20business%20online." 
+               class="btn btn-whatsapp contact-btn btn-glow-green" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Email Card (Interactive 3D + Coral Glow) -->
+          <div class="contact-card" data-tilt-type="coral" tabindex="0">
+            <div class="contact-icon-wrapper mail-bg">
+              <span class="icon-pulse-ring mail-ring"></span>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Email</h3>
+            <p class="contact-card-info">orbakonstudio@gmail.com</p>
+            <p class="contact-card-sub">Send us your inquiry or questions anytime</p>
+            <a href="mailto:orbakonstudio@gmail.com?subject=Website%20or%20Setup%20Inquiry%20-%20Orbakon" 
+               class="btn btn-secondary contact-btn">
+              <span>Send an Email</span>
+            </a>
+          </div>
+
+          <!-- Location Card (Interactive 3D + Sky Blue Glow) -->
+          <div class="contact-card" data-tilt-type="blue" tabindex="0">
+            <div class="contact-icon-wrapper location-bg">
+              <span class="icon-pulse-ring location-ring"></span>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Location</h3>
+            <p class="contact-card-info">Piska Nagri, Ranchi</p>
+            <p class="contact-card-sub">Jharkhand, India (PIN 835303)</p>
+            <div class="location-badge">
+              <span class="live-pulse-dot" style="display:inline-block; margin-right: 6px;"></span>
+              <span>In-person meets available in Ranchi</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-simple-container">
+      
+      <a href="#hero" class="footer-logo" aria-label="Orbakon - Back to top">
+        <img src="logo-stacked.png" alt="Orbakon" class="footer-logo-img">
+      </a>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Orbakon. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (Fixed bottom-right corner)
+       ========================================================================= -->
+  <aside class="floating-whatsapp-container" aria-label="Quick WhatsApp Contact">
+    <a href="https://wa.me/917903947219?text=Hi%20Orbakon%2C%20I%20want%20to%20get%20my%20business%20online." 
+       class="floating-whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat with Orbakon on WhatsApp">
+      <span class="whatsapp-pulse"></span>
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="floating-tooltip">Chat with us</span>
+    </a>
+  </aside>
+
+  <!-- =========================================================================
+       SERVICE DETAIL MODAL (Populated dynamically by script.js)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="service-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      
+      <!-- Modal Close Button -->
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close service details">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Modal Content Header -->
+      <div class="modal-header">
+        <div class="modal-tile-badge" id="modal-tile-icon">
+          <!-- Injected dynamically -->
+        </div>
+        <div class="modal-heading-group">
+          <div class="modal-meta-row">
+            <span class="price-tag">Contact for price</span>
+            <span class="modal-category" id="modal-category">Service</span>
+          </div>
+          <h3 class="modal-title" id="modal-title">Service Name</h3>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <p class="modal-description" id="modal-description">
+          Service detailed description goes here.
+        </p>
+
+        <!-- Service Highlights / Included items -->
+        <div class="modal-deliverables">
+          <h4 class="modal-section-title">What's included:</h4>
+          <ul class="modal-feature-list" id="modal-features">
+            <!-- Injected dynamically -->
+          </ul>
+        </div>
+
+        <!-- Examples Gallery Section -->
+        <div class="modal-examples-section">
+          <div class="examples-header-row">
+            <h4 class="modal-section-title">Example Work &amp; Previews</h4>
+            <span class="examples-subtitle">3 preview placeholders</span>
+          </div>
+          <div class="examples-grid" id="modal-examples-grid">
+            <!-- Injected dynamically from SERVICES_DATA array -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <a href="#" id="modal-whatsapp-cta" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span id="modal-cta-text">Get this service</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
